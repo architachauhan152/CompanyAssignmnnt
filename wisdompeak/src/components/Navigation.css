@@ -1,0 +1,60 @@
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #3498db;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .navbar ul li {
+    display: inline;
+  }
+  
+  .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .navbar ul li a:hover {
+    background-color: #2980b9;
+    border-radius: 4px;
+  }
+  
+  /* Adding smooth scrolling effect */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Offset sections for fixed navbar */
+  section {
+    padding-top: 60px;
+    margin-top: 20px;
+  }
+  
+  section#header {
+    padding-top: 100px;
+  }
+  @media (max-width: 768px) {
+    .navbar ul {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .navbar ul li {
+      margin-bottom: 10px;
+    }
+  }
+    
